@@ -3718,28 +3718,26 @@ a:hover,
 <link href="../cdn.jsdelivr.net/npm/select2%404.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 <script src="../cdn.jsdelivr.net/npm/select2%404.1.0-rc.0/dist/js/select2.min.js" type="15b76404a38b2da6cbbce364-text/javascript"></script>
 <div class="homeforms">
-	<form role="search" method="get" id="searchform" action="#">
-	  <div class="input-group">
-		<select id="s" class="input-group-field sf-input-select" style="width:100%">
-		  <option value="" selected disabled>City, State, Country or Name</option>
-		  <option value="index70c8.html">Alabama</option>
-		  <option value="indexbdc5.html">Alaska</option>
-		  <option value="indexf67f.html">Arizona</option>
-		  <option value="aliyah.html">Arkansas</option>
-		  <!-- Ajoute d'autres liens ici -->
-		</select>
-  
-		<div class="input-group-button">
-		  <input type="submit" id="searchsubmit" value="Search" class="button">
+	<!-- Premier formulaire -->
+	<!-- Premier formulaire -->
+	<form id="searchform" action="#" method="get">
+		<div class="input-group">
+		  <select id="select1" class="input-group-field sf-input-select" style="width:100%">
+			<option value="" selected disabled>City, State, Country or Name</option>
+			<option value="index70c8.html">Alabama</option>
+			<option value="indexbdc5.html">Alaska</option>
+			<option value="indexf67f.html">Arizona</option>
+			<option value="aliyah.html">Arkansas</option>
+		  </select>
+		  <div class="input-group-button">
+			<input type="submit" id="searchsubmit" value="Search" class="button">
+		  </div>
 		</div>
-	  </div>
-	</form>
-  
-	<!-- Formulaire avec les liens -->
-	<form id="searchform2" action="https://www.session-girls.com/" method="get">
-	  <select name="page_id" id="page_id" class="sf-input-select">
+	  </form>
+	<!-- Deuxième formulaire -->
+	<form id="searchform2">
+	  <select id="select2" class="sf-input-select" style="width:100%">
 		<option value="" selected disabled>Search By Listing</option>
-		<!--<option value="adara-night/index.html">Adara Night</option>-->
 		<option value="agatha-delicious/index.html">Agatha Delicious</option>
 		<option value="alex/index.html">Alex NYC</option>
 		<option value="#">Aliyah Taylor</option>
@@ -3752,51 +3750,51 @@ a:hover,
 		<option value="amazon-goddes-kali/index.html">Amazon Goddess Kali</option>
 		<option value="amazon-goddess-tessa/index.html">Amazon Goddess Tessa</option>
 		<option value="amazon-joy-2/index.html">Amazon Joy</option>
-		<option value="#">Amazon Marcy &#8211; Brazilian Goddess</option>
+		<option value="#">Amazon Marcy – Brazilian Goddess</option>
 		<option value="amazon-nikki-2/index.html">Amazon Nikki</option>
 		<option value="amazon-poppy-2/index.html">Amazon Poppy</option>
 		<option value="amazon-ranger/index.html">Amazon Ranger</option>
 		<option value="amazonamanda/index.html">AmazonAmanda</option>
 		<option value="amazonia-j/index.html">Amazonia J</option>
-		<option value="amber-phoenix/index.html">Amber phoenix</option>
-		
-</select>
+		<option value="amber-phoenix/index.html">Amber Phoenix</option>
+	  </select>
 	  <input type="submit" name="submit" value="View" />
 	</form>
   
-	<!-- Sélectionner avec Select2 -->
+	<!-- Select2 CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-	
-	<!-- jQuery + Select2 JS -->
+  
+	<!-- jQuery & Select2 JS -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-	
+  
 	<script>
-	  $(document).ready(function() {
-		// Applique Select2 sur les sélecteurs
-		$('#s, #page_id').select2({
-		  placeholder: "Search",
-		  minimumInputLength: 1
+		$(document).ready(function () {
+		  // Select 1 avec son propre placeholder
+		  $('#select1').select2({
+			placeholder: "City, State, Country or Name",
+			minimumInputLength: 1
+		  });
+	  
+		  // Select 2 avec un autre placeholder
+		  $('#select2').select2({
+			placeholder: "Search By Listing",
+			minimumInputLength: 1
+		  });
+	  
+		  // Redirection après sélection pour les deux
+		  $('#select1, #select2').on('change', function () {
+			const selectedUrl = $(this).val();
+			if (selectedUrl && selectedUrl !== "#") {
+			  window.location.href = selectedUrl;
+			}
+		  });
 		});
-  
-		// Rediriger lors de la sélection d'une option
-		$('#s').on('change', function() {
-		  var selectedUrl = $(this).val();
-		  if (selectedUrl) {
-			window.location.href = selectedUrl;
-		  }
-		});
-  
-		// Rediriger lors de la sélection dans le deuxième formulaire
-		$('#page_id').on('change', function() {
-		  var selectedUrl = $(this).val();
-		  if (selectedUrl) {
-			window.location.href = selectedUrl;
-		  }
-		});
-	  });
-	</script>
+	  </script>
+	  
   </div>
+  
+  
   
 <center> <h5><span style="color: #eeee22;">World`s Largest Mixed Wrestling Female Domination Website</span></h5></center>
 <div class="n2-section-smartslider fitvidsignore  n2_clear" data-ssid="4"><div id="n2-ss-4-align" class="n2-ss-align" style="margin: 0 auto; max-width: 1044px;"><div class="n2-padding"><div id="n2-ss-4" data-creator="Smart Slider 3" data-responsive="auto" class="n2-ss-slider n2-ow n2-has-hover n2notransition  ">
